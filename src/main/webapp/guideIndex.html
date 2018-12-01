@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/swiper.min.css">
+    <link rel="stylesheet" href="static/css/qianka.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="content">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-1"></div>
+        <div class="swiper-slide swiper-2"></div>
+        <div class="swiper-slide swiper-3"></div>
+        <div class="swiper-slide swiper-4"></div>
+        <div class="swiper-slide swiper-5"></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+
+    <!-- 如果需要导航按钮
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>-->
+
+    <!-- 如果需要滚动条
+    <div class="swiper-scrollbar"></div>-->
+</div>
+</div><div>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/qianka.js"></script>
+<script>
+    $(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'vertical', // 垂直切换选项
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器
+            pagination:{
+                el: '.swiper-pagination',
+                clickable: true,
+                clickableClass : 'my-pagination-clickable',
+            },
+        })
+    });
+
+</script>
+</body>
+
+</html>
