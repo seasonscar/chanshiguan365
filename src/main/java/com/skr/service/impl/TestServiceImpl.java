@@ -21,7 +21,7 @@ public class TestServiceImpl implements TestService{
     public String queryForString() {
         //Map m=jdbcTemplate.queryForMap("select * from app_config where id=2");
         //return m.get("app_code").toString();
-        Map m=jdbcTemplate.queryForMap("select * from CATS_BASE_INFO where id=1");
+        Map m=jdbcTemplate.queryForMap("select * from CATS_BASE_INFO2 where id=1");
         return m.get("ID").toString();
     }
 }

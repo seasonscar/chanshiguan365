@@ -1,3 +1,5 @@
+target
+.idea
 # Compiled class file
 *.class
 
@@ -20,3 +22,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.idea/workspace.xml
+.idea/misc.xml
+chanshiguan365.iml
+chanshiguan365.war
+.idea/workspace.xml

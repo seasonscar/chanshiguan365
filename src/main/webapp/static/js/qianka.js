@@ -102,10 +102,6 @@ $(function () {
     return !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
   }
 
-  // android和iOS跳到钱咖
-  if (isAndroid() || isIOS()) {
-    window.location.href = "https://qianka.com";
-  }
 
   loadingPercent();
 
