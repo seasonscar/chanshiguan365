@@ -1,5 +1,6 @@
 package com.skr.controller;
 
+
 import com.skr.service.impl.TestServiceImpl;
 import com.skr.service.intf.TestService;
 import org.apache.commons.logging.Log;
@@ -16,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
  * Created by 15082188 on 2018/8/2.
  */
 
-@Controller
+
 public class TestController {
     private static final Log log= LogFactory.getLog(TestController.class);
     @Autowired
