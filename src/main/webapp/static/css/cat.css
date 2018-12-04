@@ -9,7 +9,6 @@
 }
 
 .product-grid .product-image {
-    overflow: hidden;
     position: relative;
     display: block;
 }
@@ -34,6 +33,7 @@
     opacity: 1;
     transform: rotateY(0);
     transition: all 0.5s ease-out 0s;
+    box-shadow: 10px 10px 10px rgba(0,0,0,1);
 }
 
 .product-grid:hover .pic-1 {
@@ -51,6 +51,7 @@
     /* background: url("../img/bg.png");
     background-size:320px  320px; */
     background: #f7f5ec;
+    box-shadow: 10px 10px 10px rgba(0,0,0,1);
 }
 
 .product-grid:hover .pic-2 {
@@ -147,12 +148,13 @@
 .titlebar .line {background:#333;border-radius:10px;position:absolute;}
 .titlebar .line.top, .line.bottom {height:2px;width:120%;}
 .titlebar .line.top {width:140%;}
-.titlebar .line.left, .line.right {width:2px;height:120%;}
+.titlebar .line.left, .line.right {width:4px;height:130%;}
 .titlebar .line.top {top:0;left:0;}
 .titlebar .line.bottom {bottom:0;right:0;}
 .titlebar .line.left {left:0;top:0;}
-.titlebar .line.left2 {right:120%;bottom:0;width:2px;height:120%;}
+.titlebar .line.left2 {right:120%;bottom:0;width:4px;height:150%;}
 .titlebar .line.right {bottom:0;right:0;}
+.titlebar .line.move {transform: scale(1);}
 
 @media only screen and (max-width: 990px) {
     .pic-2 {
