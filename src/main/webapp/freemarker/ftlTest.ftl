@@ -1,0 +1,10 @@
+<html>
+<head>
+</head>
+<body>
+<div>
+	${lkm}
+	${ip}
+</div>
+</body>
+</html>
