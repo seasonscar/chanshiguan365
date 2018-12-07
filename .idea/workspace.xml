@@ -7,17 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10875ad0-7f69-4683-9dfe-7f9af4ccd06a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/chanshiguan365.iml" afterPath="$PROJECT_DIR$/chanshiguan365.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chanshiguan365/service/intf/CsgService.java" afterPath="$PROJECT_DIR$/src/main/java/com/chanshiguan365/service/intf/CsgService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/main.iml" afterPath="$PROJECT_DIR$/src/main/main.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/freemarker/index.ftl" afterPath="$PROJECT_DIR$/src/main/webapp/freemarker/index.ftl" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/guideIndex.html" afterPath="$PROJECT_DIR$/src/main/webapp/guideIndex.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/cat.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/cat.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/img/demo3.jpg" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/img/demo3.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/img/demo9.jpg" afterPath="$PROJECT_DIR$/src/main/webapp/static/img/demo3.jpg" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -254,7 +245,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="839" />
     <option name="y" value="166" />
     <option name="width" value="1400" />
@@ -624,7 +615,7 @@
       <workItem from="1543845960010" duration="1796000" />
       <workItem from="1543939275092" duration="1438000" />
       <workItem from="1544110893748" duration="2434000" />
-      <workItem from="1544196765382" duration="1630000" />
+      <workItem from="1544196765382" duration="1710000" />
     </task>
     <task id="LOCAL-00001" summary="后台">
       <created>1544111191908</created>
@@ -644,10 +635,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39327000" />
+    <option name="totallyTimeSpent" value="39407000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="2578" height="1408" extended-state="7" />
+    <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
