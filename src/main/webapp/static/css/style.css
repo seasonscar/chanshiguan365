@@ -32,7 +32,7 @@
   line-height: 1.5;
 
   padding-left: 2rem;
-  padding-right: 2rem; 
+  padding-right: 2rem;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -137,7 +137,6 @@
   width: 100%;
   height: 100vh;
   display: none;
-
   position: fixed;
   top: 0;
   right: 0;
@@ -151,7 +150,8 @@
   height: calc(100vh - 40px);
   padding: 5% 15%;
   box-sizing: border-box;
-  
+
+  background: #f7f5ec;
   margin-top: 20px;
   overflow: auto;
   -webkit-animation: fade .5s ease-out 1.3s both;
@@ -162,7 +162,7 @@
   content: "";
   box-sizing: border-box;
   width: 100%;
-  
+
   box-shadow: inset 0 0 0 20px #f0f0f0;
   background: #fff;
 
@@ -178,7 +178,7 @@
   width: 0;
   height: 2px;
   background-color: #f0f0f0;
-  
+
   will-change: width, opacity;
   -webkit-animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
           animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
@@ -204,7 +204,7 @@
   100%{
     width: 100%;
     opacity: 0;
-  }  
+  }
 }
 
 @keyframes line-animation{
@@ -222,7 +222,7 @@
   100%{
     width: 100%;
     opacity: 0;
-  }  
+  }
 }
 
 @-webkit-keyframes open-animation{
@@ -282,7 +282,7 @@
   height: 3.2rem;
   text-indent: -9999px;
   position: absolute;
-  
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -303,7 +303,7 @@
     top: 40px;
     right: 40px;
   }
-  
+
   .popup__media{
     max-width: 35%;
   }
@@ -316,7 +316,7 @@
   .popup__media_right{
     float: right;
     margin-left: 3rem;
-  }  
+  }
 }
 
 @media screen and (max-width: 640px){
@@ -354,9 +354,9 @@ body{
   font-size: 1.6rem;
   color: #222;
   background-color: #512da8;
-  
+
   margin: 0;
-  -webkit-overflow-scrolling: touch;   
+  -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
 }
 
@@ -417,7 +417,7 @@ a{
 .footer{
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align: center;  
+  text-align: center;
   font-size: 1.4rem;
 }
 
@@ -441,5 +441,5 @@ a{
 
   .melnik909{
     display: none;
-  } 
+  }
 }

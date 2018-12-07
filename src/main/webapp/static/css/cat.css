@@ -144,9 +144,11 @@
 }
 
 
-.titlebar {background-color:#f0f0f0;font-size:50px;width:80px;position:absolute;top:200px;left:200px;text-align:center;padding-top:10px;padding-bottom:10px;color:#333;}
-.titlebar .line {background:#333;border-radius:10px;position:absolute;}
-.titlebar .line.top, .line.bottom {height:2px;width:120%;}
+
+
+.titlebar {width:100px;position:absolute;top:200px;left:200px;text-align:center;padding-top:10px;padding-bottom:10px;color:#fff;box-shadow: 0 0 20px 0 rgba(0,0,0, 0.18);font-size:50px;}
+.titlebar .line {background:#333;border-radius:20px;position:absolute;transform: scale(0);transition:all 1s ease;}
+.titlebar .line.top, .line.bottom {height:4px;width:120%;}
 .titlebar .line.top {width:140%;}
 .titlebar .line.left, .line.right {width:4px;height:130%;}
 .titlebar .line.top {top:0;left:0;}
