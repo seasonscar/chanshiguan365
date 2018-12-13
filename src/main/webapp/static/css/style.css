@@ -134,7 +134,7 @@
 /* popup */
 
 .popup{
-  width: 100%;
+  width: 18%;
   height: 100vh;
   display: none;
   position: fixed;
@@ -147,12 +147,11 @@
 }
 
 .popup__block{
-  height: calc(100vh - 40px);
-  padding: 5% 15%;
+  height: calc(100vh);
+  padding: 0% 0%;
   box-sizing: border-box;
-
   background: #f7f5ec;
-  margin-top: 20px;
+  margin-top: 0px;
   overflow: auto;
   -webkit-animation: fade .5s ease-out 1.3s both;
           animation: fade .5s ease-out 1.3s both;
@@ -163,8 +162,8 @@
   box-sizing: border-box;
   width: 100%;
 
-  box-shadow: inset 0 0 0 20px #f0f0f0;
-  background: #fff;
+  box-shadow: inset 0 0 0 0px #f0f0f0;
+  background: #f7f5ec;
 
   position: fixed;
   top: 50%;
@@ -300,8 +299,8 @@
   }
 
   .popup__close{
-    top: 40px;
-    right: 40px;
+    top: 10px;
+    right: 10px;
   }
 
   .popup__media{

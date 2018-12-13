@@ -35,15 +35,4 @@ public class CsgController {
         request.setAttribute("csgInfo", csgInfo);
         return "csg";
     }
-
-    @RequestMapping(value = "csg2.htm", method = RequestMethod.POST)
-    public String index2(HttpServletRequest request) {
-        String csgId=request.getParameter("csgId");
-        if(StringUtil.isNullOrEmpty(csgId)){
-            return "";
-        }
-        Map<String, Object> csgInfo = csgService.queryCsgInfo(csgId);
-        request.setAttribute("csgInfo", csgInfo);
-        return "csg2";
-    }
 }

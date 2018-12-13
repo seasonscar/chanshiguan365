@@ -9,22 +9,25 @@
     <link rel="stylesheet" type="text/css" href="/static/css/cat.css">
     <link type="text/css" rel="stylesheet" href="/static/css/style.css">
     <link type="text/css" rel="stylesheet" href="/static/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="/static/icon/iconfont.css">
+    <style>
+           i:hover {transform: scale(2.0);}
+   </style>
 </head>
 <body>
-<div class="titlebar">
-	彼<br/>女<br/>の<br/>猫
-    <div class="line top" style="background: linear-gradient(to right, #d481ff, #05f1e1);"></div>
-    <div class="line bottom" style="background: linear-gradient(to right, #d481ff, #05f1e1);"></div>
-    <div class="line left" style="background: linear-gradient(#d481ff, #05f1e1);"></div>
-    <div class="line left2" style="background: linear-gradient(#05f1e1, #d481ff);"></div>
-    <div class="line right" style="background: linear-gradient(#d481ff, #05f1e1);"></div>
-</div>
+
 <div class="demo">
+    <div>
+        <i class="icon iconfont icon-geren" style="display:inline-block;margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
+        <i class="icon iconfont icon-chakantiezizhaopian" style="margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
+        <i class="icon iconfont icon-tianjia" style="margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
+    </div>
     <div class="container">
         <div class="row">
         <#list cardList as temp>
             <div class="col-md-3 col-sm-6 animate-box fadeInUp animated" style="margin-bottom: 30px;">
                 <div class="product-grid">
+                    <input type="hidden" id="csgid" value="${temp.CSGID}"/>
                     <a class="product-image">
                         <div class="pic-1">
                             <img src="static/img/${temp.CARDPHOTO}.jpg"/>
@@ -44,11 +47,12 @@
         </#list>
         </div>
 </div>
+
 </div>
 <div id="popup-article" class="popup">
-  <div class="popup__block">
+  <div class="popup__block" style="background-color: #f7f5ec;box-shadow:2px 0px 6px 12px rgba(0,0,0,.3);">
   </div>
-    <a href="" class="popup__close">关闭</a>
+    <a href="#" class="popup__close">关闭</a>
 </div>
 <div>
 </div>
@@ -63,13 +67,13 @@
             var t=$.ajax({
                 url:"/csg.htm",
                 data: {
-                    "csgId": "1"
+                    "csgId": $(this).find("#csgid").val()
                 },
                 type:"POST",
                 async:false
             });
             $(".popup__block").html(t.responseText);
-            window.location.href = window.location.href + "#popup-article"
+            window.location.href ="index.htm#popup-article"
         })
     });
 </script>
