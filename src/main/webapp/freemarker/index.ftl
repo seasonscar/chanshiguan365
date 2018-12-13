@@ -11,18 +11,23 @@
     <link type="text/css" rel="stylesheet" href="/static/css/animate.css">
     <link type="text/css" rel="stylesheet" href="/static/icon/iconfont.css">
     <style>
-           i:hover {transform: scale(2.0);}
+           i:hover {
+               transform: scale(1.3);
+               transition: all 0.5s ease-out 0s;
+
+           }
    </style>
 </head>
 <body>
 
 <div class="demo">
-    <div>
-        <i class="icon iconfont icon-geren" style="display:inline-block;margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
-        <i class="icon iconfont icon-chakantiezizhaopian" style="margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
-        <i class="icon iconfont icon-tianjia" style="margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
-    </div>
+
     <div class="container">
+        <div>
+            <i class="icon iconfont icon-geren" style="display:inline-block;font-size:65px;color:#FFFFFF;"></i>
+            <i class="icon iconfont icon-chakantiezizhaopian" style="display:inline-block;margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
+            <i class="icon iconfont icon-tianjia" style="display:inline-block;margin-left:30px;font-size:65px;color:#FFFFFF;"></i>
+        </div>
         <div class="row">
         <#list cardList as temp>
             <div class="col-md-3 col-sm-6 animate-box fadeInUp animated" style="margin-bottom: 30px;">
