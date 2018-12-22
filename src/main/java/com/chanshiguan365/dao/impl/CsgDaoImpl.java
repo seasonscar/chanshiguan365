@@ -20,11 +20,17 @@ public class CsgDaoImpl implements CsgDao {
 
     private static String QUERY_CSG_INFO = "SELECT * FROM CSG_BASE_INFO WHERE 1=1 AND ID=?";
 
+    private static String QUERY_ACCOUNT_INFO = "SELECT * FROM USER_ACCOUNT_INFO WHERE 1=1 AND ACCOUNT=? AND PASSWORD=?";
+
     @Override
     public Map<String, Object> queryCsgInfo(String csgId) {
-        Map<String, Object> paramMap=new HashMap();
-        paramMap.put("CSGID",1);
         Map<String, Object> result = jdbcTemplate.queryForMap(QUERY_CSG_INFO,csgId);
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> queryUserAccountInfo(String account,String password) {
+        Map<String, Object> result = jdbcTemplate.queryForMap(QUERY_ACCOUNT_INFO,account,password);
         return result;
     }
 }

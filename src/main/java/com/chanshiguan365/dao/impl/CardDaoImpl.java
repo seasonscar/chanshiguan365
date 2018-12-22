@@ -18,12 +18,19 @@ public class CardDaoImpl implements CardDao {
     private JdbcTemplate jdbcTemplate;
 
     private static String QUERY_CARD_LIST = "SELECT * FROM CARD_BASE_INFO WHERE 1=1";
-    private static String QUERY_CARD_LIST2 ="SELECT CARDPHOTO,CSGPHOTO,CSGNAME,CSGID,CSGTITLE FROM CARD_BASE_INFO T1 LEFT JOIN CSG_BASE_INFO T2 ON T1.CSGID=T2.ID";
-
+    private static String QUERY_CARD_LIST2 ="SELECT CARDPHOTO,CSGPHOTO,CSGNAME,CSGID,CSGTITLE FROM CARD_BASE_INFO T1 LEFT JOIN CSG_BASE_INFO T2 ON T1.CSGID=T2.ID ORDER BY T1.CREATETIME DESC limit 8";
+    private static String INSERT_CARD_INFO ="INSERT INTO CARD_BASE_INFO(CSGID,CARDPHOTO,CREATETIME) VALUES (?,?,CURRENT_TIMESTAMP)";
     @Override
     public List<Map<String, Object>> queryCardList() {
         Map<String, Object> paramMap=new HashMap();
         List<Map<String, Object>> result = jdbcTemplate.queryForList(QUERY_CARD_LIST2);
         return result;
+    }
+
+    @Override
+    public boolean insertCardInfo(String csgId,String cardPhoto) {
+        Map<String, Object> paramMap=new HashMap();
+        int r=jdbcTemplate.update(INSERT_CARD_INFO,csgId,cardPhoto);
+        return r==1?true:false;
     }
 }

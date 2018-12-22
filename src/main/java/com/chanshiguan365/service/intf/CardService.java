@@ -8,5 +8,17 @@ import java.util.Map;
  */
 
 public interface CardService {
+    /**
+     * 查询卡片列表
+     * @return
+     */
     List<Map<String,Object>> queryCardList();
+
+    /**
+     * 插入新的卡片
+     * @param croperImgCode
+     * @param csgId
+     * @return
+     */
+    public boolean createCard(String croperImgCode,String csgId);
 }

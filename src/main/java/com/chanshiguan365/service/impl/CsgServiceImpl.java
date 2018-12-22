@@ -22,4 +22,8 @@ public class CsgServiceImpl implements CsgService {
     public Map<String, Object> queryCsgInfo(String csgId) {
         return csgDao.queryCsgInfo(csgId);
     }
+
+    public Map<String, Object> queryUserAccountInfo(String account,String password){
+        return csgDao.queryUserAccountInfo(account,password);
+    }
 }

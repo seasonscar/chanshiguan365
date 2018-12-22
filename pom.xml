@@ -105,6 +105,20 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>prd</id>
+            <build>
+                <filters>
+                    <filter>../${project.artifactId}/vars/vars.prd.properties</filter>
+                </filters>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>2.3</version>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 
 

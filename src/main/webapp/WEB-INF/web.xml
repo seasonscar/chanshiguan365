@@ -30,6 +30,15 @@
         <servlet-name>chanshiguan365</servlet-name>
         <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>com.chanshiguan365.filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <!-- /*是对所有的文件进行拦截 -->
+    </filter-mapping>
     <welcome-file-list>
         <welcome-file>/guideIndex.html</welcome-file>
     </welcome-file-list>
