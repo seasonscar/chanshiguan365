@@ -13,6 +13,7 @@
     <context:component-scan base-package="com.chanshiguan365.controller"/>
     <context:component-scan base-package="com.chanshiguan365.service"/>
     <context:component-scan base-package="com.chanshiguan365.dao"/>
+    <context:component-scan base-package="com.chanshiguan365.filter"/>
 
     <bean
             class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
@@ -65,4 +66,5 @@
         </property>
     </bean>
     <bean id="overrideDirective" class="cn.org.rapid_framework.freemarker.directive.OverrideDirective"/>
+    <bean id="loginFilter" class="com.chanshiguan365.filter.LoginFilter"/>
 </beans>

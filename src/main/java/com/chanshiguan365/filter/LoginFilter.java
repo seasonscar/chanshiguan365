@@ -1,7 +1,11 @@
 package com.chanshiguan365.filter;
 
+import com.chanshiguan365.service.impl.CsgServiceImpl;
 import com.chanshiguan365.service.intf.CsgService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Service;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import javax.servlet.*;
 import javax.servlet.http.Cookie;
@@ -12,6 +16,7 @@ import java.io.IOException;
 /**
  * Created by 15082188 on 2018/12/21.
  */
+@Service
 public class LoginFilter implements Filter{
     @Autowired
     CsgService csgService;
@@ -34,7 +39,10 @@ public class LoginFilter implements Filter{
                 }
             }
         }
-        if (csgService.queryUserAccountInfo(account,password)!=null) {
+        ServletContext context = request.getServletContext();
+        ApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(context);
+        CsgServiceImpl csgServiceImpl = ctx.getBean("loginFilter",CsgServiceImpl.class);
+        if (csgServiceImpl.queryUserAccountInfo(account,password)!=null) {
             session = ((HttpServletRequest) request).getSession(true);
             session.setAttribute("account", account);
         }

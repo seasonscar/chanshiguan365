@@ -11,6 +11,5 @@
     <context:property-placeholder location="classpath:conf/dataSource.properties" />
     <!-- dal 数据源 -->
     <import resource="classpath:conf/spring/spring-dal.xml"/>
-
-
+    <bean id="loginFilter" class="com.chanshiguan365.filter.LoginFilter"/>
 </beans>

@@ -31,15 +31,20 @@
         <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
     <filter>
-        <filter-name>loginFilter</filter-name>
-        <filter-class>com.chanshiguan365.filter.LoginFilter</filter-class>
+        <filter-name>myFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <init-param>
+            <param-name>targetBeanName</param-name>
+            <param-value>loginFilter</param-value>
+        </init-param>
     </filter>
     <filter-mapping>
-        <filter-name>loginFilter</filter-name>
+        <filter-name>myFilter</filter-name>
         <url-pattern>/*</url-pattern>
         <!-- /*是对所有的文件进行拦截 -->
     </filter-mapping>
     <welcome-file-list>
         <welcome-file>/guideIndex.html</welcome-file>
     </welcome-file-list>
+
 </web-app>
