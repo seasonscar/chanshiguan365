@@ -32,7 +32,18 @@ public class CardServiceImpl implements CardService {
     }
 
     @Override
-    public boolean createCard(String csgId,String croperImgCode) {
+    public List<Map<String, Object>> queryCardListByCsgId(String csgId) {
+        List<Map<String, Object>> result=cardDao.queryCardListByCsgId(csgId);
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> queryCardInfo(String cardId) {
+        return cardDao.queryCardInfo(cardId);
+    }
+
+    @Override
+    public boolean createCard(String csgId,String croperImgCode,String cardNote) {
         if(StringUtil.isNullOrEmpty(croperImgCode)||croperImgCode.length()<23){
             return false;
         }
@@ -40,7 +51,7 @@ public class CardServiceImpl implements CardService {
         byte[] b= Base64Util.GenerateImage(croperImgCode,PATH);
         String imgName= UUIDGenerator.getUUID()+".jpg";
         String imgFilePath = PATH+imgName;//新生成的图片
-        cardDao.insertCardInfo(csgId,imgName);
+        cardDao.insertCardInfo(csgId,imgName,cardNote);
         OutputStream out = null;
         try {
             out = new FileOutputStream(imgFilePath);

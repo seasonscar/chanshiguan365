@@ -2,6 +2,9 @@ package com.chanshiguan365.util;
 
 import sun.misc.BASE64Decoder;
 
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+
 /**
  * Created by 15082188 on 2018/12/19.
  */

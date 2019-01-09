@@ -2,6 +2,7 @@ package com.chanshiguan365.util;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import sun.misc.BASE64Decoder;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

@@ -17,7 +17,7 @@
     <div class="loading-container">
         <div class="percent-container">
             <div class="percent"></div>
-            <div class="loading-desc">稍等噢!</div>
+            <div class="loading-desc">稍等噢!${csgId}</div>
         </div>
     </div>
     <div class="swiper-container">
@@ -27,7 +27,7 @@
                     <div class="font144">01</div>
                     <div class="font36">喵空 MioKon</div>
                     <div class="font20">一个有 “情怀” 的铲屎官社区</div>
-                    <div class="btn font24 btn-right" onclick="window.location.href='index.htm'">立即加入</div>
+                    <div class="btn font24 btn-right" href="#login">立即加入</div>
                 </div>
             </div>
             <div class="swiper-slide swiper-2" style="color:#8da1ff;">
@@ -35,7 +35,7 @@
                     <div class="font144">02</div>
                     <div class="font36">分享的快乐每一秒都在发生</div>
                     <div class="font20 mb-20">一张图片一句感言,就是这么简单</div>
-                    <div class="btn font24 btn-left" onclick="window.location.href='index.htm'" style="background:#8da1ff;">立即加入</div>
+                    <div class="btn font24 btn-left" href="#login" style="background:#8da1ff;">立即加入</div>
                 </div>
             </div>
             <div class="swiper-slide swiper-3">
@@ -43,10 +43,10 @@
                     <div class="font144">03</div>
                     <div class="font36">一起记录与喵咪的点点滴滴吧</div>
                     <div class="font20">成为社区之星,更有免费喵喵礼品赠送</div>
-                    <div class="btn font24 btn-right" onclick="window.location.href='index.htm'">立即加入</div>
+                    <div class="btn font24 btn-right" href="#login">立即加入</div>
                 </div>
             </div>
-            <div id="login" class="swiper-slide swiper-4">
+            <div id="login" class="swiper-slide swiper-4" data-hash="login">
 
             </div>
         </div>

@@ -14,11 +14,15 @@ public interface CardService {
      */
     List<Map<String,Object>> queryCardList();
 
+    List<Map<String,Object>> queryCardListByCsgId(String csgId);
+
     /**
      * 插入新的卡片
      * @param croperImgCode
      * @param csgId
      * @return
      */
-    public boolean createCard(String croperImgCode,String csgId);
+    public boolean createCard(String croperImgCode,String csgId,String cardNote);
+
+    public Map<String, Object> queryCardInfo(String cardId);
 }

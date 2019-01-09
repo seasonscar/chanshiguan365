@@ -1,4 +1,4 @@
-<div class="pic-2" style="float:left;padding:0px;width:100%;margin-top:20px;">
+<div class="pic-2" style="float:left;padding:0px;width:100%;height:100%;margin-top:20px;">
     <style>
         .home-description {
             font-weight: 500;
@@ -23,15 +23,5 @@
 
 </div>
 
-<div style="float:left;width:100%;">
-    <p class="home-description">${csgInfo.CARDNOTE}</p>
-</div>
-
-    <div style="float:left;width:100%;text-align:center;color:#2C3E50;margin-top:20px;">
-        <i class="icon iconfont icon-geren" style="display:inline-block;font-size:5rem;"></i>
-        <i class="icon iconfont icon-chakantiezizhaopian"
-           style="display:inline-block;margin-left:30px;font-size:5rem;"></i>
-        <i class="icon iconfont icon-tianjia" style="display:inline-block;margin-left:30px;font-size:5rem;"></i>
-    </div>
 
 

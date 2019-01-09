@@ -18,6 +18,7 @@
         <servlet-name>skr-servlet</servlet-name>
         <url-pattern>/testServlet.action</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>chanshiguan365</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -32,19 +33,13 @@
     </servlet-mapping>
     <filter>
         <filter-name>myFilter</filter-name>
-        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
-        <init-param>
-            <param-name>targetBeanName</param-name>
-            <param-value>loginFilter</param-value>
-        </init-param>
+        <filter-class>com.chanshiguan365.filter.LoginFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>myFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-        <!-- /*是对所有的文件进行拦截 -->
+        <url-pattern>/12345.htm</url-pattern>
     </filter-mapping>
     <welcome-file-list>
-        <welcome-file>/guideIndex.html</welcome-file>
+        <welcome-file>/guideIndex.htm</welcome-file>
     </welcome-file-list>
-
 </web-app>

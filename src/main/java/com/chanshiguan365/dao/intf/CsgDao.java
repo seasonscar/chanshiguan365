@@ -23,4 +23,12 @@ public interface CsgDao {
      */
 
     public Map<String, Object> queryUserAccountInfo(String account,String password);
+
+    public Map<String, Object> queryUserAccountInfoByAccount(String account);
+
+    public Map<String, Object> insertCsgInfo();
+
+    public boolean insertAccountInfo(String accunt,String password,String csgId);
+
+    public boolean updateCsgName(String csgId,String csgName);
 }

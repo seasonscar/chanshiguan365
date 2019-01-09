@@ -11,11 +11,11 @@
         }
     </style>
     <div class="pic">
-        <img src="static/img/${csgInfo.CSGPHOTO}.jpg">
+        <img src="static/img/${card.CSGPHOTO}.jpg">
     </div>
     <div class="team-content" style="margin-bottom: 15px;">
-        <h3 class="title">${csgInfo.CSGNAME}</h3>
-        <span class="post">${csgInfo.CSGTITLE}</span>
+        <h3 class="title">${card.CSGNAME}</h3>
+        <span class="post">${card.CSGTITLE}</span>
     </div>
     <div>
         <i class="icon iconfont icon-dianzan1" style="font-size: 30px;color: #ff4e3f;"></i>
@@ -24,7 +24,7 @@
 </div>
 
 <div style="float:left;width:100%;">
-    <p class="home-description">${csgInfo.CARDNOTE}</p>
+    <p class="home-description">${card.CARDNOTE}</p>
 </div>
 
     <div style="float:left;width:100%;text-align:center;color:#2C3E50;margin-top:20px;">

@@ -66,5 +66,5 @@
         </property>
     </bean>
     <bean id="overrideDirective" class="cn.org.rapid_framework.freemarker.directive.OverrideDirective"/>
-    <bean id="loginFilter" class="com.chanshiguan365.filter.LoginFilter"/>
+    <bean id="myFilter" name="myFilter" class="com.chanshiguan365.filter.LoginFilter"></bean>
 </beans>

@@ -20,4 +20,14 @@ public interface CsgService {
      * @return
      */
     Map<String, Object> queryUserAccountInfo(String account,String password);
+
+    public boolean checkAccountIsNotExist(String account);
+
+    /**
+     * 建立新的账户
+     * @param account
+     * @param password
+     * @return
+     */
+    public boolean createNewAccount(String account,String password);
 }

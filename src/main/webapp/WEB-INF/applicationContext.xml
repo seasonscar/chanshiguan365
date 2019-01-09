@@ -11,5 +11,12 @@
     <context:property-placeholder location="classpath:conf/dataSource.properties" />
     <!-- dal 数据源 -->
     <import resource="classpath:conf/spring/spring-dal.xml"/>
-    <bean id="loginFilter" class="com.chanshiguan365.filter.LoginFilter"/>
+    <bean name="myFilter" id="myFilter" class="com.chanshiguan365.filter.LoginFilter"></bean>
+    <bean name="csgService" id="csgService" class="com.chanshiguan365.service.impl.CsgServiceImpl">
+        <property name="csgDao" ref="csgDao"/>
+    </bean>
+    <bean name="csgDao" id="csgDao" class="com.chanshiguan365.dao.impl.CsgDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
 </beans>
