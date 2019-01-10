@@ -166,11 +166,24 @@
 <div>
 </div>
 <div id="myModal" class="reveal-modal" style="top: 100px; opacity: 1; visibility: hidden;">
-    <div>
-<span style="display: inline-block">昵称:</span>
-        <input style="font:normal;" required='' type='text'><label alt='请输入名称' placeholder='名称'></label></div></div>
-<a class="close-reveal-modal">×</a>
-</div>
+    <form action="" method="post" class="login-form">
+        <div class="username">
+            <input type="text" name="username" placeholder="emma.watson@gmail.com" autocomplete="on">
+            <span class="user-icon icon">u</span>
+        </div>
+        <div class="password">
+            <input type="password" name="password" placeholder="*******">
+            <span class="password-icon icon">p</span>
+        </div>
+        <div class="account-control">
+            <input type="checkbox" name="Remember me" id="Remember me" value="Remember me" checked="checked">
+            <label for="Remember me" data-on="c" class="check"></label>
+            <label for="Remember me" class="info">Remember me</label>
+            <button type="submit">Login</button>
+        </div>
+        <p class="not-registered">Not a registered user yet?<a>Sign up now!</a></p>
+    </form>
+    </div></div>
 <script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/swiper.min.js"></script>
 <script src="/static/js/zyupload-1.0.0.min.js"></script>
