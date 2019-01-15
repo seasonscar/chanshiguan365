@@ -4,7 +4,7 @@ import java.io.*;
 
 public class csv {
     public static void main(String[] args) throws IOException {
-        String url="D:\\end2.csv";
+        String url="D:\\tubiao.csv";
         File temp=new File(url);
         InputStreamReader isr=new InputStreamReader(new FileInputStream(temp),"GBK");
         BufferedReader br = new BufferedReader(isr);
