@@ -12,9 +12,9 @@ public class csv {
         String currentName="";
         StringBuffer sb=new StringBuffer();
         try{
-
         while((str=br.readLine())!=null){
             String[] line=str.split(",");
+            if(1983<Integer.parseInt(line[1])&&Integer.parseInt(line[1])<2010){
             if(!currentName.equals(line[0])){
                 currentName=line[0];
                 if(sb.lastIndexOf(",")!=-1){
@@ -26,6 +26,7 @@ public class csv {
                 sb.append(line[2]+",");
             }else{
                 sb.append(line[2]+",");
+            }
             }
         }
             sb.deleteCharAt(sb.lastIndexOf(","));
