@@ -67,4 +67,14 @@
     </bean>
     <bean id="overrideDirective" class="cn.org.rapid_framework.freemarker.directive.OverrideDirective"/>
     <bean id="myFilter" name="myFilter" class="com.chanshiguan365.filter.LoginFilter"></bean>
+    <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!--线程池维护线程的最少数量-->
+        <property name="corePoolSize" value="1"/>
+        <!--允许的空闲时间 -->
+        <property name="keepAliveSeconds" value="1"/>
+        <property name="maxPoolSize" value="10" />
+        <property name="rejectedExecutionHandler">
+            <bean class="java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy" />
+        </property>
+    </bean>
 </beans>

@@ -44,8 +44,7 @@ public class LoginFilter implements Filter{
         CsgServiceImpl csg=wac.getBean("csgService",CsgServiceImpl.class);
         if (csg.queryUserAccountInfo(account,password)!=null) {
             session = ((HttpServletRequest) request).getSession(true);
-            session.setAttribute("account", account);
-        }
+,        }
     }
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,ServletException{

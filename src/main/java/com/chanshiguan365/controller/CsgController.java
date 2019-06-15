@@ -32,6 +32,7 @@ public class CsgController {
         }
         Map<String, Object> csgInfo = csgService.queryCsgInfo(csgId);
         request.setAttribute("csgInfo", csgInfo);
+        System.out.println("11");
         return "csg";
     }
 
